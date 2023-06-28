@@ -1,0 +1,40 @@
+.header {
+  background-color: $main-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 55px;
+    padding: 40px 0 45px;
+    align-items: flex-end;
+    color: $white;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    gap: 35px;
+  }
+
+  &__item {
+    font-weight: 700;
+    transition: $transition;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+.header-main {
+  background-color: transparent;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  right: 0;
+}
+
+.header__link--active {
+  color: $accent-color;
+}

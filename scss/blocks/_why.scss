@@ -1,0 +1,32 @@
+.why {
+  padding: 150px 150px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__item-img {
+    width: 152px;
+    height: 151px;
+    margin: 0 auto 30px;
+  }
+
+  &__item-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+
+  &__item-text {
+    text-align: start;
+  }
+}

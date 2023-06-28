@@ -1,0 +1,61 @@
+.howdoes {
+  max-width: 594px;
+  margin: 0 auto 150px;
+
+  &__title {
+    width: 680px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  // .howdoes__text
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  // .howdoes__subtitle
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+
+  // .howdoes__list
+
+  &__list {
+    counter-reset: mycounter;
+    padding: 0;
+  }
+  &__item {
+    counter-increment: mycounter;
+    position: relative;
+    max-width: 510px;
+    padding-left: 240px;
+    margin-bottom: 40px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "" counter(mycounter);
+      width: 100px;
+      height: 100px;
+      background-color: $accent-color;
+      border-radius: 50%;
+      color: $white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      line-height: 58px;
+      font-weight: 700;
+    }
+  }
+  // .howdoes__item-text
+
+  &__item-text {
+    width: 305px;
+    padding: 19px;
+  }
+}

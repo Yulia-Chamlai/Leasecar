@@ -1,0 +1,71 @@
+.contacts {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+.form {
+  display: flex;
+  max-width: 580px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  &__name {
+    width: 270px;
+  }
+  &__name,
+  &__email,
+  &__text {
+    padding: 18px 20px;
+    border: 1px solid $accent-color;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: $main-font;
+    &::placeholder {
+      color: $main-color;
+      opacity: 0.5;
+    }
+  }
+
+  &__email {
+    width: 270px;
+  }
+
+  &__text {
+    width: 100%;
+    margin: 50px 0;
+    min-height: 291px;
+    resize: none;
+    overflow-y: auto;
+  }
+  &__name + &__email {
+    margin-left: 40px;
+  }
+
+  &__btn {
+    max-width: 184px;
+    width: 100%;
+    padding: 13px;
+    background-color: $main-color;
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    transition: $transition;
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+}

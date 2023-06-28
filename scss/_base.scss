@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: $main-font;
+  font-weight: 400;
+  background-color: $white;
+  color: $main-color;
+  font-size: 16px;
+  min-width: 320px;
+  line-height: 21px;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+/*img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+main {
+  flex-grow: 1;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.showmore-link {
+  display: inherit;
+  margin: 70px auto 50px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $main-color;
+  padding: 13px;
+  max-width: 223px;
+  width: 100%;
+  text-align: center;
+  transition: $transition;
+  &:hover {
+    background-color: $accent-color;
+  }
+}

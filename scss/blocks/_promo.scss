@@ -1,0 +1,33 @@
+.promo {
+  padding-bottom: 150px;
+  &__title {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__video {
+    text-align: center;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("./images/youtube.svg");
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 56px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.footer {
+  background-color: $main-color;
+  color: $white;
+  padding: 50px 0 32px;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    max-width: 235px;
+    padding-left: 10px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 20px;
+    font-weight: 700;
+  }
+
+  &__item + &__item {
+    margin-top: 20px;
+  }
+
+  &__link {
+    line-height: 21px;
+  }
+
+  &__app {
+    text-align: center;
+    margin-bottom: 50px;
+    a + a {
+      margin-left: 39px;
+    }
+  }
+
+  &__descr {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    max-width: 806px;
+    margin: 0 auto 30px;
+  }
+
+  &__copy {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copy-link {
+    line-height: 21px;
+    display: inline-block;
+  }
+}

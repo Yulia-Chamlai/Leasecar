@@ -1,0 +1,36 @@
+.blog {
+  padding: 50px 0 100px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &-img {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    &-title {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    &-link {
+      background-color: $accent-color;
+      color: $white;
+      padding: 4px 21px;
+      transition: $transition;
+      &:hover {
+        background-color: $main-color;
+      }
+    }
+  }
+}

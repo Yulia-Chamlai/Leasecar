@@ -1,0 +1,80 @@
+.cars {
+  padding: 100px 0 50px;
+
+  &__buttons {
+    display: flex;
+    max-width: 858px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto 100px;
+  }
+  &__btn {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    background: transparent;
+  }
+  &__btn--active {
+    color: $accent-color;
+  }
+  &__link {
+    margin: -30px auto 50px;
+  }
+}
+
+.card {
+  &__row {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+  }
+  &__row.card__row--active {
+    display: grid;
+  }
+
+  &__item-content {
+    border-bottom: 1px solid $accent-color;
+    border-top: 1px solid $accent-color;
+  }
+  &__item {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__item-content {
+    padding: 0 5px;
+    border: 1px solid $accent-color;
+    border-top: none;
+  }
+  &__item-img {
+    width: 270px;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+  }
+  &__item-title {
+    margin: 0 0 20px;
+    padding-top: 20px;
+  }
+  &__item-price {
+    margin: 20px 0;
+  }
+  &__item-title,
+  &__item-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  &__link {
+    display: block;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    border-top: none;
+    transition: $transition;
+    &:hover {
+      background-color: $accent-color;
+      color: $white;
+    }
+  }
+}
