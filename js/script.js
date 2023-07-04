@@ -18,6 +18,13 @@ function open(evt) {
   document.querySelector(`#${button}`).classList.add("card__row--active");
 }
 
+const menuBtn = document.querySelector(".header__btn");
+const menuList = document.querySelector(".header__nav");
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("active");
+  menuList.classList.toggle("active");
+});
+
 const swiper = new Swiper(".swiper", {
   effect: "fade",
   pagination: {

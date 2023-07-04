@@ -1,0 +1,258 @@
+//MEDIA1220px
+@media (max-width: 1220px) {
+  .important {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+    &__item-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+//MEDIA 1100PX
+@media (max-width: 1100px) {
+  .why {
+    padding: 50px 0;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+  }
+  .howdoes {
+    margin: 0 auto 50px;
+    &__title {
+      max-width: 680px;
+      width: 100%;
+    }
+  }
+  .promo {
+    padding-bottom: 50px;
+    &__video {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .important {
+    margin-bottom: 50px;
+  }
+}
+//MEDIA 900PX
+@media (max-width: 900px) {
+  .header {
+    &__logo {
+      display: inline-flex;
+      z-index: 11;
+    }
+
+    &__btn {
+      display: flex;
+      z-index: 11;
+    }
+    &__btn.active {
+      span {
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      &::before {
+        transform: rotate(45deg);
+        transition: transform 0.8s;
+      }
+      &::after {
+        transform: translate(0, -17px) rotate(-45deg);
+        transition: transform 0.8s;
+      }
+    }
+    &__nav {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateY(-1000%);
+      transition: 0.8s all;
+    }
+    &__nav.active {
+      transform: translateY(0);
+    }
+    &__list {
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      background-color: $main-color;
+      opacity: 0.9;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      padding-top: 200px;
+      text-align: center;
+      z-index: 10;
+    }
+  }
+  .top {
+    &__title {
+      font-size: 65px;
+      line-height: 92px;
+    }
+    &__link {
+      font-size: 30px;
+      line-height: 40px;
+      max-width: 295px;
+      padding: 15px;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 90px;
+  }
+  .howdoes {
+    &__item {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 110px;
+    }
+    &__item-text {
+      width: 100%;
+    }
+  }
+}
+//MEDIA 770PX
+@media (max-width: 770px) {
+  .footer {
+    &__top {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+    &__item + &__item {
+      margin-top: 10px;
+    }
+    &__copy-link {
+      font-size: 11px;
+    }
+  }
+}
+//MEDIA 578PX
+@media (max-width: 568px) {
+  .section-title {
+    font-size: 42px;
+  }
+  .footer__title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 12px;
+  }
+}
+//MEDIA 510PX
+@media (max-width: 510px) {
+  .top {
+    padding-top: 185px;
+    &__title {
+      font-size: 60px;
+      line-height: 75px;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 50px;
+  }
+  .why {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item-img {
+      width: 135px;
+      height: 135px;
+    }
+    &__item-text {
+      text-align: center;
+    }
+  }
+  .howdoes {
+    &__item {
+      padding-left: 90px;
+      margin-bottom: 20px;
+      min-height: 85px;
+      &::before {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        top: 7px;
+      }
+    }
+    &__item-text {
+      padding: 10px;
+    }
+  }
+  .promo {
+    &__video {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .important {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+//MEDIA 460px
+@media (max-width: 460px) {
+  .footer {
+    &__top {
+      margin-bottom: 30px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+    }
+    &__list {
+      padding-left: 0px;
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 16px;
+      padding-bottom: 1px;
+    }
+    &__link {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__copy {
+      flex-direction: column;
+      gap: 2px;
+    }
+    &__app {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      a + a {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+//MEDIA 420PX
+@media (max-width: 420px) {
+  .top {
+    &__title {
+      font-size: 48px;
+    }
+  }
+  .top__link {
+    font-size: 22px;
+    max-width: 235px;
+    padding: 8px;
+  }
+  .section-title {
+    font-size: 34px;
+  }
+  .promo {
+    &__title {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+}

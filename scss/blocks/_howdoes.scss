@@ -8,21 +8,15 @@
     flex-wrap: nowrap;
   }
 
-  // .howdoes__text
-
   &__text {
     margin-bottom: 50px;
   }
-
-  // .howdoes__subtitle
 
   &__subtitle {
     font-size: 24px;
     line-height: 29px;
     font-weight: 700;
   }
-
-  // .howdoes__list
 
   &__list {
     counter-reset: mycounter;
@@ -52,7 +46,6 @@
       font-weight: 700;
     }
   }
-  // .howdoes__item-text
 
   &__item-text {
     width: 305px;
